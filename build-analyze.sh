@@ -7,11 +7,11 @@ export SONAR_SCANNER_VERSION="4.6.1.2450" # Find the latest version in the "Linu
 export BUILD_WRAPPER_OUT_DIR="build_wrapper_output_directory" # Directory where build-wrapper output will be placed
 
 mkdir $HOME/.sonar
-export SONAR_SCANNER_HOME=$HOME/.sonar/sonar-scanner-$SONAR_SCANNER_VERSION-linux
 
 # Download build-wrapper
 curl -sSLo $HOME/.sonar/build-wrapper-linux-x86.zip https://sonarcloud.io/static/cpp/build-wrapper-linux-x86.zip
 unzip -o $HOME/.sonar/build-wrapper-linux-x86.zip -d $HOME/.sonar/
+export PATH=$HOME/.sonar/build-wrapper-linux-x86:$PATH
 
 # Download sonar-scanner
 curl -sSLo $HOME/.sonar/sonar-scanner.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VERSION-linux.zip 
