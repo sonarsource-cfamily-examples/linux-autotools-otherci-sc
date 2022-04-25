@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Configuration for SonarCloud
 SONAR_HOST_URL=https://sonarcloud.io
 #SONAR_TOKEN= # access token from SonarCloud projet creation page -Dsonar.login=XXXX: define in the environement through the CI
 export SONAR_SCANNER_VERSION="4.6.1.2450" # Find the latest version in the "Windows" link on this page:
