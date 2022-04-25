@@ -2,7 +2,7 @@
 
 SONAR_HOST_URL=https://sonarcloud.io
 #SONAR_TOKEN= # access token from SonarCloud projet creation page -Dsonar.login=XXXX: define in the environement through the CI
-export SONAR_SCANNER_VERSION="4.6.1.2450" # Find the latest version in the "Windows" link on this page:
+export SONAR_SCANNER_VERSION="4.6.1.2450" # Find the latest version in the "Linux" link on this page:
                                           # https://sonarcloud.io/documentation/analysis/scan/sonarscanner/
 export BUILD_WRAPPER_OUT_DIR="build_wrapper_output_directory" # Directory where build-wrapper output will be placed
 
