@@ -18,6 +18,10 @@ curl -sSLo $HOME/.sonar/sonar-scanner.zip https://binaries.sonarsource.com/Distr
 unzip -o $HOME/.sonar/sonar-scanner.zip -d $HOME/.sonar/
 export PATH=$HOME/.sonar/sonar-scanner-$SONAR_SCANNER_VERSION-linux/bin:$PATH
 
+# Checkout the repository
+git clone https://$GITHUB_TOKEN@github.com/sonarsource-cfamily-examples/linux-autotools-otherci-sc
+cd linux-autotools-otherci-sc
+
 # Setup the build system
 autoreconf --install
 ./configure
